@@ -43,13 +43,13 @@ interface ScriptInterface extends SerializableInterface
      * @param WitnessProgram|null $witness
      * @return bool
      */
-    public function isWitness(& $witness): bool;
+    public function isWitness(&$witness): bool;
 
     /**
      * @param BufferInterface $scriptHash
      * @return bool
      */
-    public function isP2SH(& $scriptHash): bool;
+    public function isP2SH(&$scriptHash): bool;
 
     /**
      * @param bool $accurate

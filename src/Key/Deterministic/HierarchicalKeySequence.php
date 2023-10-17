@@ -64,7 +64,7 @@ class HierarchicalKeySequence
      * @param string ...$parts
      * @return int[]
      */
-    private function decodeDerivation(string... $parts): array
+    private function decodeDerivation(string ...$parts): array
     {
         $indices = [];
         foreach ($parts as $i => $part) {

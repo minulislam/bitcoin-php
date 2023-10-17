@@ -34,5 +34,5 @@ jobs:
       - name: Run PHPUnit
         run: ./vendor/bin/phpunit --testdox
 
-      - name: Run PHPStan
-        run: ./vendor/bin/phpstan
+      - name: Run PHPCS
+        run: ./vendor/bin/phpcs --standard=PSR2 src/ --colors -n

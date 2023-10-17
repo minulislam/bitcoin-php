@@ -44,7 +44,7 @@ class MultisigHD
      * @param ScriptDataFactory $scriptDataFactory
      * @param HierarchicalKey ...$keys
      */
-    public function __construct(ScriptDataFactory $scriptDataFactory, HierarchicalKey... $keys)
+    public function __construct(ScriptDataFactory $scriptDataFactory, HierarchicalKey ...$keys)
     {
         if (count($keys) < 1) {
             throw new \RuntimeException('Must have at least one HierarchicalKey for Multisig HD Script');

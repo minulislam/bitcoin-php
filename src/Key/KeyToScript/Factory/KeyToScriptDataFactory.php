@@ -42,7 +42,7 @@ abstract class KeyToScriptDataFactory extends ScriptDataFactory
      * @param KeyInterface ...$keys
      * @return ScriptAndSignData
      */
-    public function convertKey(KeyInterface... $keys): ScriptAndSignData
+    public function convertKey(KeyInterface ...$keys): ScriptAndSignData
     {
         $pubs = [];
         foreach ($keys as $key) {
