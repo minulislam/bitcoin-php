@@ -156,7 +156,7 @@ class ScriptCreator
      * @param string... $opNames
      * @return $this
      */
-    public function op(string... $opNames)
+    public function op(string ...$opNames)
     {
         $opCodes = [];
         foreach ($opNames as $opName) {
